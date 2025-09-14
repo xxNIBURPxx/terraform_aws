@@ -135,4 +135,11 @@ This removes all resources to avoid unnecessary AWS costs.
 
 ------------------------------------------------------------------------
 
+**Additional Notes:**
+- Resources and details in documentation are examples. Please ensure to update accordingly.
+- Update regional information as needed.
+- Update keypair as needed.
+
+------------------------------------------------------------------------
+
 **Author:** Phillip Rubin
