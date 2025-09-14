@@ -64,11 +64,11 @@ terraform destroy
 
 1.  **VPC**
     -   CIDR: `10.0.0.0/16`
-    -   Name: `<InsertName>-VPC01`
+    -   Name: `InsertName-VPC01`
 2.  **Subnet**
     -   CIDR: `10.0.1.0/24`
     -   AZ: `us-west-2a`
-    -   Name: `<InsertName>-PROD`
+    -   Name: `InsertName-PROD`
 3.  **Internet Gateway & Route Table**
     -   Provides public internet access
     -   Routes for IPv4 (`0.0.0.0/0`) and IPv6 (`::/0`)
@@ -92,7 +92,7 @@ terraform destroy
 
 -   **RDP (3389)** and **SSH (22)** are currently open to `0.0.0.0/0`.\
     👉 Update to your trusted IP range for better security.
--   Replace placeholder names (`<InsertName>`) with your project or
+-   Replace placeholder names (`InsertName`) with your project or
     environment name.
 -   Ensure your `key_name` matches an existing AWS EC2 key pair.
 
@@ -108,7 +108,7 @@ variable "aws_region" {
 
 variable "project_name" {
   type    = string
-  default = "<InsertName>"
+  default = "InsertName"
 }
 ```
 
@@ -135,5 +135,4 @@ This removes all resources to avoid unnecessary AWS costs.
 
 ------------------------------------------------------------------------
 
-**Author:** Your Name\
-**License:** MIT
+**Author:** Phillip Rubin
